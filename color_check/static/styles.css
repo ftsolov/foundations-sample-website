@@ -13,3 +13,8 @@ footer {
     margin-top: 5rem;
     text-align: center;
 }
+
+.rectangle {
+    width: 40%;
+    border-radius: 10px;
+}

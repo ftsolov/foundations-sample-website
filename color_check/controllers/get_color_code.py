@@ -7,6 +7,8 @@
 # letting them know that their color doesn't exist.
 
 import json
+import os
+
 
 def get_color_code(color_name):
     # this is where you should add your logic to check the color.
@@ -14,14 +16,15 @@ def get_color_code(color_name):
     # The file can be considered as JSON format, or as a Python dictionary.
 
     # open json file and store
-    with open('foundations-sample-website/color_check/data/css-color-names.json', 'r') as color_database:
+    path = os.path.join(os.path.dirname(__file__), '../data/css-color-names.json')
+    with open(path, 'r') as color_database:
         data_dict = json.load(color_database)
 
         if color_name in data_dict:
-            hex_code = data_dict[color_name]
+            hex_code = data_dict[color_name]  # get hex code
             return hex_code
         else:
-            print("Color not found, please try another one")
+            raise Exception("Color not found, please try again.")
 
 
-print(get_color_code("black"))
+# print(get_color_code("max"))

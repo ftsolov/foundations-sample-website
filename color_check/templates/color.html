@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <p> Edit this file to show the name of the color and to render a square of that color itself! 
+    <p> {{ color_name }} is a really cool color! Check it out below.
     </p>
+
+    <h3 style="color: {{ color_hex_code }} ">{{ color_hex_code }}</h3>
+    <div class="rectangle" style="background-color: {{ color_hex_code }}"></div>   {# display the colour #}
+
 
 {% endblock %}
