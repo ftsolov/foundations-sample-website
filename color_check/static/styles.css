@@ -4,18 +4,28 @@ body {
     text-align: center;
     max-width: 50ch;
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
 }
 
 p {
     font-size: 1.2rem;
     margin: 0;
+    color: #5a5a5a;
 }
 
 a {
     text-decoration: none;
 }
 
-h3 {
+h1,h2,h3,h4,h5 {
     text-align: center;
 }
 
@@ -25,10 +35,18 @@ h3 {
     margin-bottom: 1rem;
 }
 
+.small-text {
+    font-size: 0.6rem;
+}
+
 .rectangle {
     height: 200px;
     width: 400px;
     border-radius: 10px;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    cursor: auto;
 }
 
 .search-bar {
@@ -76,9 +94,117 @@ h3 {
 }
 
 footer {
-    text-align: center;
-    bottom: 0;
-    position: absolute;
-    margin: 0 auto;
+/*    text-align: center;*/
+/*    bottom: 0;*/
+/*    position: absolute;*/
+/*    margin: 0 auto;*/
 }
 
+/*HOVER*/
+
+@-webkit-keyframes hvr-ripple-out {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+    }
+}
+@keyframes hvr-ripple-out {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+    }
+}
+.hvr-ripple-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+}
+.hvr-ripple-out:before {
+    content: '';
+    position: absolute;
+    border: #e1e1e1 solid 6px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+    -webkit-animation-name: hvr-ripple-out;
+    animation-name: hvr-ripple-out;
+}
+
+/* Bob */
+@-webkit-keyframes hvr-bob {
+    0% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+    50% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+    100% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+}
+@keyframes hvr-bob {
+    0% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+    50% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+    100% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+}
+@-webkit-keyframes hvr-bob-float {
+    100% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+}
+@keyframes hvr-bob-float {
+    100% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+}
+.hvr-bob {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+    -webkit-animation-name: hvr-bob-float, hvr-bob;
+    animation-name: hvr-bob-float, hvr-bob;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+}
