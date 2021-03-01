@@ -1,7 +1,7 @@
 <!-- This html template will start off all of your other html files/pages -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- the page title will be a varible passed to the render_template() function for each page separately-->
     <title> {{ page_title }}</title>
@@ -9,7 +9,7 @@
     <!-- include the css from the file static/style.css -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
   </head>
-  <body>
+  <body class="flex">
 
   <!-- this headline will appear on all pages. -->
   <header>
@@ -24,4 +24,5 @@
   <footer>
     <h3> By Filip Tsolov </h3>
   </footer>
+  <script>g</script>
   </body>

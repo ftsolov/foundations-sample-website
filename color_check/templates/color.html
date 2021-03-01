@@ -1,11 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <div>
+
     <p> {{ color_name }} is a really cool color! Check it out below.
     </p>
 
     <h3 {#style="color: {{ color_hex_code }}; background-color: white"#}>{{ color_hex_code }}</h3>
-    <div class="rectangle" style="background-color: {{ color_hex_code }}"></div>   {# display the colour #}
+
+    <div class="flex">
+        <div class="rectangle" style="background-color: {{ color_hex_code }}"></div>   {# display the colour #}
+        <a class="submit-button" style="background-color: {{ color_hex_code }}" href="/">Go back</a>
+    </div>
+    </div>
 
 
 {% endblock %}
