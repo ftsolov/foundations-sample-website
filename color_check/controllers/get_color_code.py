@@ -8,6 +8,7 @@
 
 import json
 import os
+import logging
 
 
 def get_color_code(color_name):
@@ -22,9 +23,9 @@ def get_color_code(color_name):
 
         if color_name in data_dict:
             hex_code = data_dict[color_name]  # get hex code
+            logging.debug(f"Hex code is: {hex_code}")
             return hex_code
         else:
             raise Exception("Color not found, please try again.")
 
 
-# print(get_color_code("max"))

@@ -1,0 +1,82 @@
+root - DEBUG - User string: blue
+root - DEBUG - Hex code is: #0000ff
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:14:31] "[37mPOST /color HTTP/1.1[0m" 200 -
+root - DEBUG - User string: blue
+root - DEBUG - Hex code is: #0000ff
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:14:46] "[37mPOST /color HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:14:46] "[37mGET /static/styles.css HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:14:58] "[37mGET / HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:14:58] "[37mGET /static/styles.css HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:15:02] "[31m[1mGET /color HTTP/1.1[0m" 405 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:21:00] "[31m[1mGET /color HTTP/1.1[0m" 405 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:34:41] "[37mGET / HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:34:41] "[37mGET /static/styles.css HTTP/1.1[0m" 200 -
+root - DEBUG - User string: blue
+root - DEBUG - Hex code is: #0000ff
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:34:48] "[37mPOST /color HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:34:52] "[37mGET / HTTP/1.1[0m" 200 -
+root - DEBUG - User string: egeqgt
+root - ERROR - Color not found.
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:34:54] "[37mPOST /color HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:34:56] "[37mGET / HTTP/1.1[0m" 200 -
+root - DEBUG - User string: rtwhwrthtrwh
+root - ERROR - Color not found.
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:35:00] "[37mPOST /color HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:35:04] "[37mGET / HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:35:08] "[31m[1mGET /color HTTP/1.1[0m" 405 -
+root - DEBUG - User string: nino
+root - ERROR - Color not found.
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:38:58] "[37mPOST /color HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:39:09] "[37mGET / HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:57:10] "[37mGET / HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:57:10] "[37mGET /static/styles.css HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:57:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+root - DEBUG - User string: blue
+root - DEBUG - Hex code is: #0000ff
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:57:14] "[37mPOST /color HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:57:19] "[37mGET / HTTP/1.1[0m" 200 -
+root - DEBUG - User string: red
+root - DEBUG - Hex code is: #ff0000
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:57:21] "[37mPOST /color HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:57:23] "[37mGET / HTTP/1.1[0m" 200 -
+root - DEBUG - User string: pink
+root - DEBUG - Hex code is: #ffc0cb
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:57:26] "[37mPOST /color HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:57:28] "[37mGET / HTTP/1.1[0m" 200 -
+root - DEBUG - User string: lucas
+root - ERROR - Color not found.
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:57:30] "[37mPOST /color HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 17:57:34] "[37mGET / HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:30:38] "[37mGET / HTTP/1.1[0m" 200 -
+root - DEBUG - User string: red
+root - DEBUG - Hex code is: #ff0000
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:30:46] "[37mPOST /color HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:30:49] "[37mGET / HTTP/1.1[0m" 200 -
+root - DEBUG - User string: pink
+root - DEBUG - Hex code is: #ffc0cb
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:30:52] "[37mPOST /color HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:30:54] "[37mGET / HTTP/1.1[0m" 200 -
+root - DEBUG - User string: purple
+root - DEBUG - Hex code is: #800080
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:30:56] "[37mPOST /color HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:30:59] "[37mGET / HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:54:07] "[37mGET / HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:54:08] "[37mGET / HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:54:08] "[37mGET /static/styles.css HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:54:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+root - DEBUG - User string: blue
+root - DEBUG - Hex code is: #0000ff
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:54:11] "[37mPOST /color HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:54:13] "[37mGET / HTTP/1.1[0m" 200 -
+root - DEBUG - User string: max
+root - ERROR - Color not found.
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:54:15] "[37mPOST /color HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:54:17] "[37mGET / HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:54:35] "[31m[1mGET /color HTTP/1.1[0m" 405 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:58:39] "[31m[1mGET /color HTTP/1.1[0m" 405 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:58:59] "[37mGET / HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:58:59] "[37mGET /static/styles.css HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:59:01] "[37mGET / HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:59:01] "[37mGET /static/styles.css HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:59:27] "[33mGET /[object%20Object] HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [02/Mar/2021 18:59:41] "[31m[1mPOST /color HTTP/1.1[0m" 400 -
