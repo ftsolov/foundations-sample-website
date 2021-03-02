@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <p> Always wondered if a certain color exists in CSS? Just type the color in the input box
+    <p> Always wondered if a certain color exists in CSS? Just type the color name in the input box
     down below and see what happens.</p>
     
     <!-- when the user submits this form, it will send the information submitted from the client (frontend)
@@ -12,7 +12,7 @@
         <!-- add the contents of your form here -->
         <div class="flex">
             <input class="search-bar" autocomplete="off" type="text" name="color" id="color" required placeholder="e.g blue">
-            <input class="submit-button hvr-ripple-out" type="submit" value="Check">
+            <input class="submit-button" type="submit" value="Check">
         </div>
     </form>
 

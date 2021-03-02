@@ -1,11 +1,12 @@
 from flask import Flask, render_template, request
 from color_check.controllers.get_color_code import get_color_code
+
 app = Flask(__name__)
 
 
 @app.route('/')
 def index():
-    return render_template('index.html', page_title="Color Check")
+    return render_template('index.html', page_title="Color Check", color_hex_code='#096bd6')
 
 
 @app.route('/color', methods=['POST'])
@@ -21,7 +22,12 @@ def show_color():
     # - create a log.txt file which records (logs) the user requests. 
 
     user_submitted_string = request.form["color"]
-    color_hex_code = get_color_code(user_submitted_string)
+
+    try:
+        color_hex_code = get_color_code(user_submitted_string)
+
+    except:
+        return render_template('error.html', page_title="Error")
 
     user_submitted_string_capitalized = user_submitted_string.capitalize()
 

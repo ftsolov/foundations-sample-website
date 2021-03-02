@@ -36,7 +36,7 @@ h1,h2,h3,h4,h5 {
 }
 
 .small-text {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 
 .rectangle {
@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5 {
 }
 
 .search-bar {
-    width: 70%;
+    width: 90%;
     height: 3rem;
     padding: 0 1.3rem;
     border-radius: 0.3rem;
@@ -72,7 +72,7 @@ h1,h2,h3,h4,h5 {
     color: white;
     border-radius: 0.3rem;
     cursor: pointer;
-    transition: all;
+    transition-property: background-color, transform;
     transition-timing-function: ease-out;
     transition-duration: 0.4s;
     border: none;
@@ -101,48 +101,6 @@ footer {
 }
 
 /*HOVER*/
-
-@-webkit-keyframes hvr-ripple-out {
-    100% {
-        top: -12px;
-        right: -12px;
-        bottom: -12px;
-        left: -12px;
-        opacity: 0;
-    }
-}
-@keyframes hvr-ripple-out {
-    100% {
-        top: -12px;
-        right: -12px;
-        bottom: -12px;
-        left: -12px;
-        opacity: 0;
-    }
-}
-.hvr-ripple-out {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-}
-.hvr-ripple-out:before {
-    content: '';
-    position: absolute;
-    border: #e1e1e1 solid 6px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-}
-.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
-    -webkit-animation-name: hvr-ripple-out;
-    animation-name: hvr-ripple-out;
-}
 
 /* Bob */
 @-webkit-keyframes hvr-bob {
@@ -185,6 +143,7 @@ footer {
         transform: translateY(-8px);
     }
 }
+
 .hvr-bob {
     display: inline-block;
     vertical-align: middle;
@@ -192,6 +151,7 @@ footer {
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
+
 .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
     -webkit-animation-name: hvr-bob-float, hvr-bob;
     animation-name: hvr-bob-float, hvr-bob;
@@ -205,6 +165,6 @@ footer {
     animation-iteration-count: 1, infinite;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    -webkit-animation-direction: normal, alternate;
-    animation-direction: normal, alternate;
+    -webkit-animation-direction: normal, reverse;
+    animation-direction: normal, reverse;
 }
