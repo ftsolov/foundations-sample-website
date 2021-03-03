@@ -1,3 +1,13 @@
 root - DEBUG - User string: blue
 root - DEBUG - Hex code is: #0000ff
 werkzeug - INFO - 127.0.0.1 - - [03/Mar/2021 18:47:26] "[37mPOST /color HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Mar/2021 18:51:05] "[37mGET / HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Mar/2021 18:51:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+root - DEBUG - User string: red
+root - DEBUG - Hex code is: #ff0000
+werkzeug - INFO - 127.0.0.1 - - [03/Mar/2021 18:51:07] "[37mPOST /color HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Mar/2021 18:51:47] "[37mGET / HTTP/1.1[0m" 200 -
+root - DEBUG - User string: pink
+root - DEBUG - Hex code is: #ffc0cb
+werkzeug - INFO - 127.0.0.1 - - [03/Mar/2021 18:51:50] "[37mPOST /color HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [03/Mar/2021 18:51:54] "[37mGET / HTTP/1.1[0m" 200 -

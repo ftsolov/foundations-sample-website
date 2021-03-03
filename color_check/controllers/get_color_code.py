@@ -17,8 +17,7 @@ def get_color_code(color_name):
     # The file can be considered as JSON format, or as a Python dictionary.
 
     # open json file and store
-    path = os.path.join(os.path.dirname(__file__), '../data/css-color-names.json')
-    with open(path, 'r') as color_database:
+    with open('color_check/data/css-color-names.json', 'r') as color_database:
         data_dict = json.load(color_database)
 
         if color_name in data_dict:
