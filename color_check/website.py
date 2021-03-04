@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request
 from color_check.controllers.get_color_code import get_color_code
 import logging
 
@@ -24,13 +24,16 @@ def show_color():
 
     user_submitted_string = request.form["color"]
     joined_string = user_submitted_string.replace(" ", "")
+    lowercase_string = joined_string.lower()
 
     # debugging
-    logging.basicConfig(filename='/tmp/logs.txt', filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
+    logging.basicConfig(filename='/tmp/logs.txt', filemode='w', format='%(name)s - %(levelname)s - %(message)s',
+                        level=logging.DEBUG)
     logging.debug(f"User string: {user_submitted_string}")
+    print(f"User string: {user_submitted_string}")
 
     try:
-        color_hex_code = get_color_code(joined_string)
+        color_hex_code = get_color_code(lowercase_string)
 
     except:
         logging.error("Color not found.")

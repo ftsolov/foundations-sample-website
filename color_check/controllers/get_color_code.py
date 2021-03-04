@@ -26,5 +26,3 @@ def get_color_code(color_name):
             return hex_code
         else:
             raise Exception("Color not found, please try again.")
-
-
