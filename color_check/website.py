@@ -23,19 +23,20 @@ def show_color():
     # - create a log.txt file which records (logs) the user requests. 
 
     user_submitted_string = request.form["color"]
+    joined_string = user_submitted_string.replace(" ", "")
 
     # debugging
-    # logging.basicConfig(filename='logs.txt', filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
-    # logging.debug(f"User string: {user_submitted_string}")
+    logging.basicConfig(filename='/tmp/logs.txt', filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
+    logging.debug(f"User string: {user_submitted_string}")
 
     try:
-        color_hex_code = get_color_code(user_submitted_string)
+        color_hex_code = get_color_code(joined_string)
 
     except:
-        # logging.error("Color not found.")
+        logging.error("Color not found.")
         return render_template('error.html', page_title="Error", user_color=user_submitted_string)
 
-    user_submitted_string_capitalized = user_submitted_string.capitalize()
+    user_submitted_string_capitalized = user_submitted_string.capitalize()  # capitalise first letter
 
     return render_template('color.html', page_title="Show Color",
                            color_hex_code=color_hex_code, color_name=user_submitted_string_capitalized)
